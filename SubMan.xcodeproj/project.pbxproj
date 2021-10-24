@@ -17,6 +17,7 @@
 		7D9FE2222725A3A300883F4F /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */; };
 		7D9FE2252725A4E400883F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2242725A4E400883F4F /* ViewController.swift */; };
 		7D9FE2282725A4F700883F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FE2262725A4F700883F4F /* Main.storyboard */; };
+<<<<<<< HEAD
 		7D9FE22D2725FCDD00883F4F /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */; };
 		7D9FE22F2725FCEA00883F4F /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */; };
 		7D9FE2312725FD0400883F4F /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2302725FD0400883F4F /* DefaultsManager.swift */; };
@@ -24,6 +25,12 @@
 		7D9FE23727260B8300883F4F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23627260B8300883F4F /* Category.swift */; };
 		7D9FE23927260B8D00883F4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23827260B8D00883F4F /* User.swift */; };
 		7D9FE23B27260D1F00883F4F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23A27260D1F00883F4F /* Service.swift */; };
+=======
+		D5610E5A2725FC92000B3685 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E592725FC92000B3685 /* Login.storyboard */; };
+		D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */; };
+		D5610E6027261488000B3685 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E5F27261488000B3685 /* Settings.storyboard */; };
+		D5610E6427261ABA000B3685 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E6327261ABA000B3685 /* LoginNavigationController.swift */; };
+>>>>>>> 8e5740b05a176447c32a292045e836c7282af8a9
 		D5A27116272442D500F00251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27115272442D500F00251 /* AppDelegate.swift */; };
 		D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27117272442D500F00251 /* SceneDelegate.swift */; };
 		D5A2711F272442D900F00251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A2711E272442D900F00251 /* Assets.xcassets */; };
@@ -38,7 +45,6 @@
 		D5A271562724655900F00251 /* CryptHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A271552724655900F00251 /* CryptHelper.swift */; };
 		D5A2715A2724675600F00251 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A271592724675600F00251 /* LoginViewModel.swift */; };
 		D5A2715C2724685000F00251 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2715B2724685000F00251 /* LoginViewController.swift */; };
-		D5A2715E2724686600F00251 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A2715D2724686600F00251 /* Auth.storyboard */; };
 		D5A2716027246BC900F00251 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2715F27246BC900F00251 /* UIViewController.swift */; };
 		D5A2716227246C2400F00251 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2716127246C2400F00251 /* UIView.swift */; };
 		D5A2716A2724CB3E00F00251 /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5A271642724CB3C00F00251 /* SF-Pro-Text-Thin.otf */; };
@@ -92,6 +98,10 @@
 		BADA6CD107D138633E74D34C /* Pods-SubMan-SubManUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.debug.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EEEC003E17C9DBC4EFBE64 /* Pods-SubMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan.release.xcconfig"; path = "Target Support Files/Pods-SubMan/Pods-SubMan.release.xcconfig"; sourceTree = "<group>"; };
 		D1FBF51B5596BECE3036F0EF /* Pods-SubMan-SubManUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.release.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5610E592725FC92000B3685 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
+		D5610E5F27261488000B3685 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		D5610E6327261ABA000B3685 /* LoginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		D5A27112272442D500F00251 /* SubMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A27115272442D500F00251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A27117272442D500F00251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +122,6 @@
 		D5A271552724655900F00251 /* CryptHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptHelper.swift; sourceTree = "<group>"; };
 		D5A271592724675600F00251 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D5A2715B2724685000F00251 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D5A2715D2724686600F00251 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		D5A2715F27246BC900F00251 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		D5A2716127246C2400F00251 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D5A271642724CB3C00F00251 /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
@@ -231,6 +240,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D5610E5E27261477000B3685 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D5610E5F27261488000B3685 /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		D5A27109272442D500F00251 = {
 			isa = PBXGroup;
 			children = (
@@ -334,6 +351,7 @@
 		D5A2714B2724472A00F00251 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D5610E5E27261477000B3685 /* Settings */,
 				D5A271702724CDAC00F00251 /* Subscriptions */,
 				D5A271572724671D00F00251 /* Auth */,
 			);
@@ -360,9 +378,10 @@
 		D5A271582724672C00F00251 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D5610E6327261ABA000B3685 /* LoginNavigationController.swift */,
 				D5A271592724675600F00251 /* LoginViewModel.swift */,
 				D5A2715B2724685000F00251 /* LoginViewController.swift */,
-				D5A2715D2724686600F00251 /* Auth.storyboard */,
+				D5610E592725FC92000B3685 /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -385,6 +404,7 @@
 			children = (
 				D5A271712724CDC700F00251 /* Subscriptions.storyboard */,
 				7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */,
+				D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -509,9 +529,10 @@
 				D5A2716A2724CB3E00F00251 /* SF-Pro-Text-Thin.otf in Resources */,
 				D5A2716F2724CB3E00F00251 /* SF-Pro-Text-Bold.otf in Resources */,
 				D5A2716D2724CB3E00F00251 /* SF-Pro-Text-Ultralight.otf in Resources */,
-				D5A2715E2724686600F00251 /* Auth.storyboard in Resources */,
 				D5A271462724432400F00251 /* GoogleService-Info.plist in Resources */,
 				D5A2716B2724CB3E00F00251 /* SF-Pro-Text-Regular.otf in Resources */,
+				D5610E6027261488000B3685 /* Settings.storyboard in Resources */,
+				D5610E5A2725FC92000B3685 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,13 +718,18 @@
 				D5A2716027246BC900F00251 /* UIViewController.swift in Sources */,
 				7D9FE23427260B7100883F4F /* Subscription.swift in Sources */,
 				D5A2716227246C2400F00251 /* UIView.swift in Sources */,
+<<<<<<< HEAD
 				7D9FE22F2725FCEA00883F4F /* CategoriesService.swift in Sources */,
+=======
+				D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */,
+>>>>>>> 8e5740b05a176447c32a292045e836c7282af8a9
 				D5A2714D2724479F00F00251 /* ApiResponse.swift in Sources */,
 				D5A2714F272449C300F00251 /* NetworkManager.swift in Sources */,
 				D5A27116272442D500F00251 /* AppDelegate.swift in Sources */,
 				7D9FE2202725A01E00883F4F /* CategoriesRepository.swift in Sources */,
 				7D9FE2312725FD0400883F4F /* DefaultsManager.swift in Sources */,
 				7D9FE21C27259FE900883F4F /* CurrencyAPIRouter.swift in Sources */,
+				D5610E6427261ABA000B3685 /* LoginNavigationController.swift in Sources */,
 				D5A271562724655900F00251 /* CryptHelper.swift in Sources */,
 				7D9FE23727260B8300883F4F /* Category.swift in Sources */,
 				D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */,
@@ -901,7 +927,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LibTrack.SubMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -921,7 +947,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = LibTrack.SubMan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

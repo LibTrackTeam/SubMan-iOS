@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 import FirebaseAuth
 import GoogleSignIn
 import AuthenticationServices
@@ -77,7 +78,10 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
     @available(iOS 13.0, *)
     @IBAction func appleSignIn(_ sender: UIButton) {
         print("tapped")
-        appleButtonTapped()
+//        appleButtonTapped()
+        //check subscriptions ui
+        let vc: SubscriptionsViewController = UIStoryboard(name: "Subscriptions", bundle: nil).instantiateViewController(withIdentifier: "SubscriptionsViewController") as! SubscriptionsViewController
+        self.present(vc, animated: true, completion: nil)
     }
 
 }

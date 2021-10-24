@@ -19,6 +19,7 @@
 		7D9FE2282725A4F700883F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FE2262725A4F700883F4F /* Main.storyboard */; };
 		D5610E5A2725FC92000B3685 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E592725FC92000B3685 /* Login.storyboard */; };
 		D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */; };
+		D5610E6027261488000B3685 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E5F27261488000B3685 /* Settings.storyboard */; };
 		D5A27116272442D500F00251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27115272442D500F00251 /* AppDelegate.swift */; };
 		D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27117272442D500F00251 /* SceneDelegate.swift */; };
 		D5A2711F272442D900F00251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A2711E272442D900F00251 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		D1FBF51B5596BECE3036F0EF /* Pods-SubMan-SubManUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.release.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D5610E592725FC92000B3685 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
+		D5610E5F27261488000B3685 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		D5A27112272442D500F00251 /* SubMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A27115272442D500F00251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A27117272442D500F00251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D5610E5E27261477000B3685 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D5610E5F27261488000B3685 /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		D5A27109272442D500F00251 = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +301,7 @@
 		D5A2714B2724472A00F00251 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D5610E5E27261477000B3685 /* Settings */,
 				D5A271702724CDAC00F00251 /* Subscriptions */,
 				D5A271572724671D00F00251 /* Auth */,
 			);
@@ -468,6 +479,7 @@
 				D5A2716D2724CB3E00F00251 /* SF-Pro-Text-Ultralight.otf in Resources */,
 				D5A271462724432400F00251 /* GoogleService-Info.plist in Resources */,
 				D5A2716B2724CB3E00F00251 /* SF-Pro-Text-Regular.otf in Resources */,
+				D5610E6027261488000B3685 /* Settings.storyboard in Resources */,
 				D5610E5A2725FC92000B3685 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

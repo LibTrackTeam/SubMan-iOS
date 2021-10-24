@@ -27,7 +27,7 @@ class FirebaseHelper: FirebaseHelperProtocol {
 
     func getCredentialFromGoogle(with googleUser: GIDGoogleUser) -> AuthCredential {
         let authentication = googleUser.authentication
-        let credential = GoogleAuthProvider.credential(withIDToken: (authentication?.idToken)!, accessToken: (authentication?.accessToken)!)
+        let credential = GoogleAuthProvider.credential(withIDToken: (authentication.idToken)!, accessToken: (authentication?.accessToken)!)
         return credential
     }
 

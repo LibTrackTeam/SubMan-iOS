@@ -14,7 +14,11 @@ class LoginViewModel {
     var firebaseHelper: FirebaseHelperProtocol?
     var cryptHelper = CryptHelper()
     var nonce: String?
-    var view: LoginViewController = LoginViewController()
+    var view: LoginViewController?
+
+    init(view: LoginViewController) {
+        self.view = view
+    }
 
     func firebaseGoogleLogin(with googleUser: GIDGoogleUser) {
         let credential = firebaseHelper?.getCredentialFromGoogle(with: googleUser)
@@ -49,7 +53,8 @@ class LoginViewModel {
             }
         }
         if let message = errorMessage {
-//  display alert message here
+            //  display alert message here
+            view?.showAlert(title: "Error", message: message)
             return
         }
         // get verified token
@@ -62,7 +67,7 @@ class LoginViewModel {
     }
 
     func signIn() {
-
+        view?.moveIntoSubscriptions()
     }
 
     func getVerifyIDToken() {

@@ -14,7 +14,7 @@ class LoginViewModel {
     var firebaseHelper: FirebaseHelperProtocol?
     var cryptHelper = CryptHelper()
     var nonce: String?
-    var view: LoginViewController = LoginViewController()
+    var view: LoginViewController?
 
     func firebaseGoogleLogin(with googleUser: GIDGoogleUser) {
         let credential = firebaseHelper?.getCredentialFromGoogle(with: googleUser)

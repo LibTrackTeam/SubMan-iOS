@@ -16,11 +16,17 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
     var firebaseHelper: FirebaseHelperProtocol? = FirebaseHelper()
     var cryptHelper = CryptHelper()
     var nonce: String?
-    var loginVM: LoginViewModel = LoginViewModel()
+    var loginVM: LoginViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginVM = LoginViewModel(view: self)
+    }
 
+
+    func moveIntoSubscriptions(){
+        let vc: SubscriptionsViewController = UIStoryboard(name: "Subscriptions", bundle: nil).instantiateViewController(withIdentifier: "SubscriptionsViewController") as! SubscriptionsViewController
+        self.present(vc, animated: true, completion: nil)
     }
 
     func googleButtonTapped() {
@@ -54,14 +60,14 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
     func firebaseGoogleLogin(with googleUser: GIDGoogleUser) {
         let credential = firebaseHelper?.getCredentialFromGoogle(with: googleUser)
         firebaseHelper?.loginUser(credential: credential!) { (result, error) in
-            self.loginVM.signedIn(error: error, result: result)
+            self.loginVM?.signedIn(error: error, result: result)
         }
     }
 
     func firebaseAppleLogin(with idToken: String) {
         let credential = firebaseHelper?.getCredentialFromApple(with: idToken, nonce: nonce!)
         firebaseHelper?.loginUser(credential: credential!) { (result, error) in
-            self.loginVM.signedIn(error: error, result: result)
+            self.loginVM?.signedIn(error: error, result: result)
         }
     }
 
@@ -77,11 +83,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
 
     @available(iOS 13.0, *)
     @IBAction func appleSignIn(_ sender: UIButton) {
-        print("tapped")
 //        appleButtonTapped()
-        //check subscriptions ui
-        let vc: SubscriptionsViewController = UIStoryboard(name: "Subscriptions", bundle: nil).instantiateViewController(withIdentifier: "SubscriptionsViewController") as! SubscriptionsViewController
-        self.present(vc, animated: true, completion: nil)
     }
 
 }

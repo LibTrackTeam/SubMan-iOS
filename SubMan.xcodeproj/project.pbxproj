@@ -17,6 +17,13 @@
 		7D9FE2222725A3A300883F4F /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */; };
 		7D9FE2252725A4E400883F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2242725A4E400883F4F /* ViewController.swift */; };
 		7D9FE2282725A4F700883F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FE2262725A4F700883F4F /* Main.storyboard */; };
+		7D9FE22D2725FCDD00883F4F /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */; };
+		7D9FE22F2725FCEA00883F4F /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */; };
+		7D9FE2312725FD0400883F4F /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2302725FD0400883F4F /* DefaultsManager.swift */; };
+		7D9FE23427260B7100883F4F /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23327260B7100883F4F /* Subscription.swift */; };
+		7D9FE23727260B8300883F4F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23627260B8300883F4F /* Category.swift */; };
+		7D9FE23927260B8D00883F4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23827260B8D00883F4F /* User.swift */; };
+		7D9FE23B27260D1F00883F4F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23A27260D1F00883F4F /* Service.swift */; };
 		D5A27116272442D500F00251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27115272442D500F00251 /* AppDelegate.swift */; };
 		D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27117272442D500F00251 /* SceneDelegate.swift */; };
 		D5A2711F272442D900F00251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A2711E272442D900F00251 /* Assets.xcassets */; };
@@ -75,6 +82,13 @@
 		7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModel.swift; sourceTree = "<group>"; };
 		7D9FE2242725A4E400883F4F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7D9FE2272725A4F700883F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
+		7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
+		7D9FE2302725FD0400883F4F /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
+		7D9FE23327260B7100883F4F /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		7D9FE23627260B8300883F4F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7D9FE23827260B8D00883F4F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7D9FE23A27260D1F00883F4F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		BADA6CD107D138633E74D34C /* Pods-SubMan-SubManUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.debug.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EEEC003E17C9DBC4EFBE64 /* Pods-SubMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan.release.xcconfig"; path = "Target Support Files/Pods-SubMan/Pods-SubMan.release.xcconfig"; sourceTree = "<group>"; };
 		D1FBF51B5596BECE3036F0EF /* Pods-SubMan-SubManUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.release.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,8 +175,37 @@
 		7D9FE2232725A3B900883F4F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7D9FE23327260B7100883F4F /* Subscription.swift */,
+				7D9FE23627260B8300883F4F /* Category.swift */,
+				7D9FE23827260B8D00883F4F /* User.swift */,
+				7D9FE23A27260D1F00883F4F /* Service.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7D9FE2292725FCBE00883F4F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7D9FE22B2725FCCD00883F4F /* Categories */,
+				7D9FE22A2725FCC600883F4F /* Subscriptions */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7D9FE22A2725FCC600883F4F /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
+		7D9FE22B2725FCCD00883F4F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		B7AC3384E3B6A8CDD05C0975 /* Pods */ = {
@@ -213,6 +256,7 @@
 		D5A27114272442D500F00251 /* SubMan */ = {
 			isa = PBXGroup;
 			children = (
+				7D9FE2292725FCBE00883F4F /* Services */,
 				7D9FE2232725A3B900883F4F /* Models */,
 				7D9FE21527259D2B00883F4F /* Repository */,
 				D5A2714A2724471500F00251 /* DataManager */,
@@ -282,6 +326,7 @@
 				7D9FE21627259F6E00883F4F /* Endpoints */,
 				D5A2715227244A9600F00251 /* APIManager */,
 				D5A2714C2724479F00F00251 /* ApiResponse.swift */,
+				7D9FE2302725FD0400883F4F /* DefaultsManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -357,6 +402,7 @@
 				D5A27110272442D500F00251 /* Resources */,
 				6CE3C3F799961263862AA518 /* [CP] Embed Pods Frameworks */,
 				E5827801CC841AE385B42515 /* [CP] Copy Pods Resources */,
+				7D9FE23C2726197400883F4F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -569,6 +615,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubMan/Pods-SubMan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7D9FE23C2726197400883F4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		AF39540E6D4F0917D63BC27B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -629,19 +692,26 @@
 			files = (
 				D5A271542724637A00F00251 /* FirebaseHelper.swift in Sources */,
 				D5A27151272449DF00F00251 /* NetworkConstants.swift in Sources */,
+				7D9FE23B27260D1F00883F4F /* Service.swift in Sources */,
 				7D9FE21A27259F9200883F4F /* CategoriesAPIRouter.swift in Sources */,
 				D5A2716027246BC900F00251 /* UIViewController.swift in Sources */,
+				7D9FE23427260B7100883F4F /* Subscription.swift in Sources */,
 				D5A2716227246C2400F00251 /* UIView.swift in Sources */,
+				7D9FE22F2725FCEA00883F4F /* CategoriesService.swift in Sources */,
 				D5A2714D2724479F00F00251 /* ApiResponse.swift in Sources */,
 				D5A2714F272449C300F00251 /* NetworkManager.swift in Sources */,
 				D5A27116272442D500F00251 /* AppDelegate.swift in Sources */,
 				7D9FE2202725A01E00883F4F /* CategoriesRepository.swift in Sources */,
+				7D9FE2312725FD0400883F4F /* DefaultsManager.swift in Sources */,
 				7D9FE21C27259FE900883F4F /* CurrencyAPIRouter.swift in Sources */,
 				D5A271562724655900F00251 /* CryptHelper.swift in Sources */,
+				7D9FE23727260B8300883F4F /* Category.swift in Sources */,
 				D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */,
 				7D9FE2252725A4E400883F4F /* ViewController.swift in Sources */,
 				7D9FE21827259F7900883F4F /* SubscriptionsAPIRouter.swift in Sources */,
+				7D9FE22D2725FCDD00883F4F /* SubscriptionService.swift in Sources */,
 				D5A2715C2724685000F00251 /* LoginViewController.swift in Sources */,
+				7D9FE23927260B8D00883F4F /* User.swift in Sources */,
 				7D9FE2222725A3A300883F4F /* SubscriptionsViewModel.swift in Sources */,
 				D5A2715A2724675600F00251 /* LoginViewModel.swift in Sources */,
 				7D9FE21E2725A00D00883F4F /* SubscriptionsRepository.swift in Sources */,

@@ -17,20 +17,10 @@
 		7D9FE2222725A3A300883F4F /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */; };
 		7D9FE2252725A4E400883F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2242725A4E400883F4F /* ViewController.swift */; };
 		7D9FE2282725A4F700883F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FE2262725A4F700883F4F /* Main.storyboard */; };
-<<<<<<< HEAD
-		7D9FE22D2725FCDD00883F4F /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */; };
-		7D9FE22F2725FCEA00883F4F /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */; };
-		7D9FE2312725FD0400883F4F /* DefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2302725FD0400883F4F /* DefaultsManager.swift */; };
-		7D9FE23427260B7100883F4F /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23327260B7100883F4F /* Subscription.swift */; };
-		7D9FE23727260B8300883F4F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23627260B8300883F4F /* Category.swift */; };
-		7D9FE23927260B8D00883F4F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23827260B8D00883F4F /* User.swift */; };
-		7D9FE23B27260D1F00883F4F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE23A27260D1F00883F4F /* Service.swift */; };
-=======
 		D5610E5A2725FC92000B3685 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E592725FC92000B3685 /* Login.storyboard */; };
 		D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */; };
 		D5610E6027261488000B3685 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E5F27261488000B3685 /* Settings.storyboard */; };
 		D5610E6427261ABA000B3685 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E6327261ABA000B3685 /* LoginNavigationController.swift */; };
->>>>>>> 8e5740b05a176447c32a292045e836c7282af8a9
 		D5A27116272442D500F00251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27115272442D500F00251 /* AppDelegate.swift */; };
 		D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27117272442D500F00251 /* SceneDelegate.swift */; };
 		D5A2711F272442D900F00251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A2711E272442D900F00251 /* Assets.xcassets */; };
@@ -718,11 +708,7 @@
 				D5A2716027246BC900F00251 /* UIViewController.swift in Sources */,
 				7D9FE23427260B7100883F4F /* Subscription.swift in Sources */,
 				D5A2716227246C2400F00251 /* UIView.swift in Sources */,
-<<<<<<< HEAD
-				7D9FE22F2725FCEA00883F4F /* CategoriesService.swift in Sources */,
-=======
 				D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */,
->>>>>>> 8e5740b05a176447c32a292045e836c7282af8a9
 				D5A2714D2724479F00F00251 /* ApiResponse.swift in Sources */,
 				D5A2714F272449C300F00251 /* NetworkManager.swift in Sources */,
 				D5A27116272442D500F00251 /* AppDelegate.swift in Sources */,

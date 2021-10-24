@@ -20,6 +20,7 @@
 		D5610E5A2725FC92000B3685 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E592725FC92000B3685 /* Login.storyboard */; };
 		D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */; };
 		D5610E6027261488000B3685 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E5F27261488000B3685 /* Settings.storyboard */; };
+		D5610E6427261ABA000B3685 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E6327261ABA000B3685 /* LoginNavigationController.swift */; };
 		D5A27116272442D500F00251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27115272442D500F00251 /* AppDelegate.swift */; };
 		D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27117272442D500F00251 /* SceneDelegate.swift */; };
 		D5A2711F272442D900F00251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A2711E272442D900F00251 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		D5610E592725FC92000B3685 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
 		D5610E5F27261488000B3685 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		D5610E6327261ABA000B3685 /* LoginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		D5A27112272442D500F00251 /* SubMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A27115272442D500F00251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A27117272442D500F00251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 		D5A271582724672C00F00251 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				D5610E6327261ABA000B3685 /* LoginNavigationController.swift */,
 				D5A271592724675600F00251 /* LoginViewModel.swift */,
 				D5A2715B2724685000F00251 /* LoginViewController.swift */,
 				D5610E592725FC92000B3685 /* Login.storyboard */,
@@ -653,6 +656,7 @@
 				D5A27116272442D500F00251 /* AppDelegate.swift in Sources */,
 				7D9FE2202725A01E00883F4F /* CategoriesRepository.swift in Sources */,
 				7D9FE21C27259FE900883F4F /* CurrencyAPIRouter.swift in Sources */,
+				D5610E6427261ABA000B3685 /* LoginNavigationController.swift in Sources */,
 				D5A271562724655900F00251 /* CryptHelper.swift in Sources */,
 				D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */,
 				7D9FE2252725A4E400883F4F /* ViewController.swift in Sources */,

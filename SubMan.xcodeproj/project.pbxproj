@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		3E809B48933CA719C32FD670 /* Pods_SubManTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F0078F901201F1F2B257A5 /* Pods_SubManTests.framework */; };
 		4779948466B9EE9770BC2174 /* Pods_SubMan_SubManUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CEA9DC91FB9F3616CA9EAF /* Pods_SubMan_SubManUITests.framework */; };
+		7D9FE21827259F7900883F4F /* SubscriptionsAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE21727259F7900883F4F /* SubscriptionsAPIRouter.swift */; };
+		7D9FE21A27259F9200883F4F /* CategoriesAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE21927259F9200883F4F /* CategoriesAPIRouter.swift */; };
+		7D9FE21C27259FE900883F4F /* CurrencyAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE21B27259FE900883F4F /* CurrencyAPIRouter.swift */; };
+		7D9FE21E2725A00D00883F4F /* SubscriptionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE21D2725A00D00883F4F /* SubscriptionsRepository.swift */; };
+		7D9FE2202725A01E00883F4F /* CategoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE21F2725A01E00883F4F /* CategoriesRepository.swift */; };
+		7D9FE2222725A3A300883F4F /* SubscriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */; };
+		7D9FE2252725A4E400883F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE2242725A4E400883F4F /* ViewController.swift */; };
+		7D9FE2282725A4F700883F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D9FE2262725A4F700883F4F /* Main.storyboard */; };
 		D5A27116272442D500F00251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27115272442D500F00251 /* AppDelegate.swift */; };
 		D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27117272442D500F00251 /* SceneDelegate.swift */; };
-		D5A2711A272442D500F00251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A27119272442D500F00251 /* ViewController.swift */; };
-		D5A2711D272442D500F00251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A2711B272442D500F00251 /* Main.storyboard */; };
 		D5A2711F272442D900F00251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5A2711E272442D900F00251 /* Assets.xcassets */; };
 		D5A27122272442D900F00251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A27120272442D900F00251 /* LaunchScreen.storyboard */; };
 		D5A2712D272442D900F00251 /* SubManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2712C272442D900F00251 /* SubManTests.swift */; };
@@ -61,14 +67,20 @@
 		4E0297447C6E1D134CFBAD6E /* Pods-SubManTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubManTests.release.xcconfig"; path = "Target Support Files/Pods-SubManTests/Pods-SubManTests.release.xcconfig"; sourceTree = "<group>"; };
 		4FF0BE41500BD310993981DD /* Pods-SubManTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubManTests.debug.xcconfig"; path = "Target Support Files/Pods-SubManTests/Pods-SubManTests.debug.xcconfig"; sourceTree = "<group>"; };
 		55F0078F901201F1F2B257A5 /* Pods_SubManTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubManTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9FE21727259F7900883F4F /* SubscriptionsAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsAPIRouter.swift; sourceTree = "<group>"; };
+		7D9FE21927259F9200883F4F /* CategoriesAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesAPIRouter.swift; sourceTree = "<group>"; };
+		7D9FE21B27259FE900883F4F /* CurrencyAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAPIRouter.swift; sourceTree = "<group>"; };
+		7D9FE21D2725A00D00883F4F /* SubscriptionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsRepository.swift; sourceTree = "<group>"; };
+		7D9FE21F2725A01E00883F4F /* CategoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepository.swift; sourceTree = "<group>"; };
+		7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewModel.swift; sourceTree = "<group>"; };
+		7D9FE2242725A4E400883F4F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D9FE2272725A4F700883F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BADA6CD107D138633E74D34C /* Pods-SubMan-SubManUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.debug.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EEEC003E17C9DBC4EFBE64 /* Pods-SubMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan.release.xcconfig"; path = "Target Support Files/Pods-SubMan/Pods-SubMan.release.xcconfig"; sourceTree = "<group>"; };
 		D1FBF51B5596BECE3036F0EF /* Pods-SubMan-SubManUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.release.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D5A27112272442D500F00251 /* SubMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A27115272442D500F00251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5A27117272442D500F00251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5A27119272442D500F00251 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D5A2711C272442D500F00251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5A2711E272442D900F00251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5A27121272442D900F00251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5A27123272442D900F00251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +139,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D9FE21527259D2B00883F4F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7D9FE21D2725A00D00883F4F /* SubscriptionsRepository.swift */,
+				7D9FE21F2725A01E00883F4F /* CategoriesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		7D9FE21627259F6E00883F4F /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				7D9FE21727259F7900883F4F /* SubscriptionsAPIRouter.swift */,
+				7D9FE21927259F9200883F4F /* CategoriesAPIRouter.swift */,
+				7D9FE21B27259FE900883F4F /* CurrencyAPIRouter.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		7D9FE2232725A3B900883F4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B7AC3384E3B6A8CDD05C0975 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,18 +213,20 @@
 		D5A27114272442D500F00251 /* SubMan */ = {
 			isa = PBXGroup;
 			children = (
+				7D9FE2232725A3B900883F4F /* Models */,
+				7D9FE21527259D2B00883F4F /* Repository */,
 				D5A2714A2724471500F00251 /* DataManager */,
 				D5A27148272446FC00F00251 /* Extensions */,
 				D5A271472724468800F00251 /* Helpers */,
 				D5A2714B2724472A00F00251 /* Modules */,
 				D5A271492724470C00F00251 /* SupportingFiles */,
 				D5A27120272442D900F00251 /* LaunchScreen.storyboard */,
-				D5A2711B272442D500F00251 /* Main.storyboard */,
 				D5A271452724432400F00251 /* GoogleService-Info.plist */,
+				7D9FE2262725A4F700883F4F /* Main.storyboard */,
 				D5A27123272442D900F00251 /* Info.plist */,
 				D5A27115272442D500F00251 /* AppDelegate.swift */,
 				D5A27117272442D500F00251 /* SceneDelegate.swift */,
-				D5A27119272442D500F00251 /* ViewController.swift */,
+				7D9FE2242725A4E400883F4F /* ViewController.swift */,
 			);
 			path = SubMan;
 			sourceTree = "<group>";
@@ -239,6 +279,7 @@
 		D5A2714A2724471500F00251 /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				7D9FE21627259F6E00883F4F /* Endpoints */,
 				D5A2715227244A9600F00251 /* APIManager */,
 				D5A2714C2724479F00F00251 /* ApiResponse.swift */,
 			);
@@ -298,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A271712724CDC700F00251 /* Subscriptions.storyboard */,
+				7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -415,6 +457,7 @@
 				D5A2716C2724CB3E00F00251 /* SF-Pro-Text-ThinItalic.otf in Resources */,
 				D5A27122272442D900F00251 /* LaunchScreen.storyboard in Resources */,
 				D5A2716E2724CB3E00F00251 /* SF-Pro-Text-Semibold.otf in Resources */,
+				7D9FE2282725A4F700883F4F /* Main.storyboard in Resources */,
 				D5A271722724CDC700F00251 /* Subscriptions.storyboard in Resources */,
 				D5A2711F272442D900F00251 /* Assets.xcassets in Resources */,
 				D5A2716A2724CB3E00F00251 /* SF-Pro-Text-Thin.otf in Resources */,
@@ -422,7 +465,6 @@
 				D5A2716D2724CB3E00F00251 /* SF-Pro-Text-Ultralight.otf in Resources */,
 				D5A2715E2724686600F00251 /* Auth.storyboard in Resources */,
 				D5A271462724432400F00251 /* GoogleService-Info.plist in Resources */,
-				D5A2711D272442D500F00251 /* Main.storyboard in Resources */,
 				D5A2716B2724CB3E00F00251 /* SF-Pro-Text-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,16 +629,22 @@
 			files = (
 				D5A271542724637A00F00251 /* FirebaseHelper.swift in Sources */,
 				D5A27151272449DF00F00251 /* NetworkConstants.swift in Sources */,
-				D5A2711A272442D500F00251 /* ViewController.swift in Sources */,
+				7D9FE21A27259F9200883F4F /* CategoriesAPIRouter.swift in Sources */,
 				D5A2716027246BC900F00251 /* UIViewController.swift in Sources */,
 				D5A2716227246C2400F00251 /* UIView.swift in Sources */,
 				D5A2714D2724479F00F00251 /* ApiResponse.swift in Sources */,
 				D5A2714F272449C300F00251 /* NetworkManager.swift in Sources */,
 				D5A27116272442D500F00251 /* AppDelegate.swift in Sources */,
+				7D9FE2202725A01E00883F4F /* CategoriesRepository.swift in Sources */,
+				7D9FE21C27259FE900883F4F /* CurrencyAPIRouter.swift in Sources */,
 				D5A271562724655900F00251 /* CryptHelper.swift in Sources */,
 				D5A27118272442D500F00251 /* SceneDelegate.swift in Sources */,
+				7D9FE2252725A4E400883F4F /* ViewController.swift in Sources */,
+				7D9FE21827259F7900883F4F /* SubscriptionsAPIRouter.swift in Sources */,
 				D5A2715C2724685000F00251 /* LoginViewController.swift in Sources */,
+				7D9FE2222725A3A300883F4F /* SubscriptionsViewModel.swift in Sources */,
 				D5A2715A2724675600F00251 /* LoginViewModel.swift in Sources */,
+				7D9FE21E2725A00D00883F4F /* SubscriptionsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,10 +680,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D5A2711B272442D500F00251 /* Main.storyboard */ = {
+		7D9FE2262725A4F700883F4F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5A2711C272442D500F00251 /* Base */,
+				7D9FE2272725A4F700883F4F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

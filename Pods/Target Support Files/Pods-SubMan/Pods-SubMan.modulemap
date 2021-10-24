@@ -1,0 +1,6 @@
+framework module Pods_SubMan {
+  umbrella header "Pods-SubMan-umbrella.h"
+
+  export *
+  module * { export * }
+}

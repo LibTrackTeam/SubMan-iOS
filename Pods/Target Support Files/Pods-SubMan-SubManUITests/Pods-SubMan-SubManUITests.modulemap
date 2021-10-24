@@ -1,0 +1,6 @@
+framework module Pods_SubMan_SubManUITests {
+  umbrella header "Pods-SubMan-SubManUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

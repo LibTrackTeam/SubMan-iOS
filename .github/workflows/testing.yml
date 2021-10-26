@@ -14,4 +14,4 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_12.4.app && /usr/bin/xcodebuild -version
     - name: Run unit tests
-      run: xcodebuild test -scheme SubMan -workspace SubMan.xcworkspace -destination 'generic/platform=iOS' | xcpretty && exit ${PIPESTATUS[0]}
+      run: xcodebuild build-for-testing -scheme SubMan -workspace SubMan.xcworkspace -destination 'generic/platform=iOS' | xcpretty && exit ${PIPESTATUS[0]}

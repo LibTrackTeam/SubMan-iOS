@@ -43,6 +43,14 @@
 		D5A2716E2724CB3E00F00251 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5A271682724CB3E00F00251 /* SF-Pro-Text-Semibold.otf */; };
 		D5A2716F2724CB3E00F00251 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D5A271692724CB3E00F00251 /* SF-Pro-Text-Bold.otf */; };
 		D5A271722724CDC700F00251 /* Subscriptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5A271712724CDC700F00251 /* Subscriptions.storyboard */; };
+		D5D28B14272AC2E000ACCE40 /* SubscriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D28B12272AC2E000ACCE40 /* SubscriptionViewCell.swift */; };
+		D5D28B15272AC2E000ACCE40 /* SubscriptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D28B13272AC2E000ACCE40 /* SubscriptionViewCell.xib */; };
+		D5D28B18272AC82E00ACCE40 /* AddSubsciptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D28B16272AC82E00ACCE40 /* AddSubsciptionCell.swift */; };
+		D5D28B19272AC82E00ACCE40 /* AddSubsciptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D28B17272AC82E00ACCE40 /* AddSubsciptionCell.xib */; };
+		D5D28B1C272AD9FD00ACCE40 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D28B1A272AD9FD00ACCE40 /* SettingsCell.swift */; };
+		D5D28B1D272AD9FD00ACCE40 /* SettingsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D28B1B272AD9FD00ACCE40 /* SettingsCell.xib */; };
+		D5D28B20272ADB4900ACCE40 /* ArchivedSubscriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D28B1E272ADB4900ACCE40 /* ArchivedSubscriptionCell.swift */; };
+		D5D28B21272ADB4900ACCE40 /* ArchivedSubscriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5D28B1F272ADB4900ACCE40 /* ArchivedSubscriptionCell.xib */; };
 		EE0C90C7764F2581F9409F9D /* Pods_SubMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED01AF46FF16D3A1DB93B4F1 /* Pods_SubMan.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +120,14 @@
 		D5A271682724CB3E00F00251 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		D5A271692724CB3E00F00251 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		D5A271712724CDC700F00251 /* Subscriptions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscriptions.storyboard; sourceTree = "<group>"; };
+		D5D28B12272AC2E000ACCE40 /* SubscriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewCell.swift; sourceTree = "<group>"; };
+		D5D28B13272AC2E000ACCE40 /* SubscriptionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriptionViewCell.xib; sourceTree = "<group>"; };
+		D5D28B16272AC82E00ACCE40 /* AddSubsciptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubsciptionCell.swift; sourceTree = "<group>"; };
+		D5D28B17272AC82E00ACCE40 /* AddSubsciptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddSubsciptionCell.xib; sourceTree = "<group>"; };
+		D5D28B1A272AD9FD00ACCE40 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		D5D28B1B272AD9FD00ACCE40 /* SettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCell.xib; sourceTree = "<group>"; };
+		D5D28B1E272ADB4900ACCE40 /* ArchivedSubscriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivedSubscriptionCell.swift; sourceTree = "<group>"; };
+		D5D28B1F272ADB4900ACCE40 /* ArchivedSubscriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArchivedSubscriptionCell.xib; sourceTree = "<group>"; };
 		ED01AF46FF16D3A1DB93B4F1 /* Pods_SubMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -196,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				D5610E5F27261488000B3685 /* Settings.storyboard */,
+				D5D28B1A272AD9FD00ACCE40 /* SettingsCell.swift */,
+				D5D28B1B272AD9FD00ACCE40 /* SettingsCell.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -354,6 +372,12 @@
 				D5A271712724CDC700F00251 /* Subscriptions.storyboard */,
 				7D9FE2212725A3A300883F4F /* SubscriptionsViewModel.swift */,
 				D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */,
+				D5D28B12272AC2E000ACCE40 /* SubscriptionViewCell.swift */,
+				D5D28B13272AC2E000ACCE40 /* SubscriptionViewCell.xib */,
+				D5D28B16272AC82E00ACCE40 /* AddSubsciptionCell.swift */,
+				D5D28B17272AC82E00ACCE40 /* AddSubsciptionCell.xib */,
+				D5D28B1E272ADB4900ACCE40 /* ArchivedSubscriptionCell.swift */,
+				D5D28B1F272ADB4900ACCE40 /* ArchivedSubscriptionCell.xib */,
 			);
 			path = Subscriptions;
 			sourceTree = "<group>";
@@ -468,7 +492,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D28B19272AC82E00ACCE40 /* AddSubsciptionCell.xib in Resources */,
 				D5A2716C2724CB3E00F00251 /* SF-Pro-Text-ThinItalic.otf in Resources */,
+				D5D28B1D272AD9FD00ACCE40 /* SettingsCell.xib in Resources */,
+				D5D28B15272AC2E000ACCE40 /* SubscriptionViewCell.xib in Resources */,
 				D5A27122272442D900F00251 /* LaunchScreen.storyboard in Resources */,
 				D5A2716E2724CB3E00F00251 /* SF-Pro-Text-Semibold.otf in Resources */,
 				7D9FE2282725A4F700883F4F /* Main.storyboard in Resources */,
@@ -476,6 +503,7 @@
 				D5A2711F272442D900F00251 /* Assets.xcassets in Resources */,
 				D5A2716A2724CB3E00F00251 /* SF-Pro-Text-Thin.otf in Resources */,
 				D5A2716F2724CB3E00F00251 /* SF-Pro-Text-Bold.otf in Resources */,
+				D5D28B21272ADB4900ACCE40 /* ArchivedSubscriptionCell.xib in Resources */,
 				D5A2716D2724CB3E00F00251 /* SF-Pro-Text-Ultralight.otf in Resources */,
 				D5A271462724432400F00251 /* GoogleService-Info.plist in Resources */,
 				D5A2716B2724CB3E00F00251 /* SF-Pro-Text-Regular.otf in Resources */,
@@ -643,6 +671,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A271542724637A00F00251 /* FirebaseHelper.swift in Sources */,
+				D5D28B20272ADB4900ACCE40 /* ArchivedSubscriptionCell.swift in Sources */,
 				D5A27151272449DF00F00251 /* NetworkConstants.swift in Sources */,
 				7D9FE21A27259F9200883F4F /* CategoriesAPIRouter.swift in Sources */,
 				D5A2716027246BC900F00251 /* UIViewController.swift in Sources */,
@@ -651,6 +680,8 @@
 				D5A2714D2724479F00F00251 /* ApiResponse.swift in Sources */,
 				D5A2714F272449C300F00251 /* NetworkManager.swift in Sources */,
 				D5A27116272442D500F00251 /* AppDelegate.swift in Sources */,
+				D5D28B18272AC82E00ACCE40 /* AddSubsciptionCell.swift in Sources */,
+				D5D28B1C272AD9FD00ACCE40 /* SettingsCell.swift in Sources */,
 				7D9FE2202725A01E00883F4F /* CategoriesRepository.swift in Sources */,
 				7D9FE21C27259FE900883F4F /* CurrencyAPIRouter.swift in Sources */,
 				D5A271562724655900F00251 /* CryptHelper.swift in Sources */,
@@ -659,6 +690,7 @@
 				7D9FE21827259F7900883F4F /* SubscriptionsAPIRouter.swift in Sources */,
 				D5A2715C2724685000F00251 /* LoginViewController.swift in Sources */,
 				7D9FE2222725A3A300883F4F /* SubscriptionsViewModel.swift in Sources */,
+				D5D28B14272AC2E000ACCE40 /* SubscriptionViewCell.swift in Sources */,
 				D5A2715A2724675600F00251 /* LoginViewModel.swift in Sources */,
 				7D9FE21E2725A00D00883F4F /* SubscriptionsRepository.swift in Sources */,
 			);

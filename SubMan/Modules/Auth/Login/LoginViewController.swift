@@ -10,6 +10,7 @@ import Foundation
 import FirebaseAuth
 import GoogleSignIn
 import AuthenticationServices
+import Combine
 
 class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
 
@@ -17,16 +18,28 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
     var cryptHelper = CryptHelper()
     var nonce: String?
     var loginVM: LoginViewModel = LoginViewModel()
+    lazy var viewModel: LoginViewModel = {
+        let viewModel = LoginViewModel()
+        return viewModel
+    }()
+    private var cancellables: Set<AnyCancellable> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bindViewModel()
     }
 
     func googleButtonTapped() {
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().signIn()
+    }
+    
+    private func bindViewModel() {
+        viewModel.$token.sink { toekn in
+            print("Hello \(toekn)")
+        }
     }
 
     @available(iOS 13.0, *)
@@ -48,20 +61,20 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
             return
         }
         print("try login")
-        firebaseGoogleLogin(with: user)
+        viewModel.signInAndGetToken(googleUser: user)
     }
 
     func firebaseGoogleLogin(with googleUser: GIDGoogleUser) {
         let credential = firebaseHelper?.getCredentialFromGoogle(with: googleUser)
         firebaseHelper?.loginUser(credential: credential!) { (result, error) in
-            self.loginVM.signedIn(error: error, result: result)
+//            self.loginVM.signedIn(error: error, result: result)
         }
     }
 
     func firebaseAppleLogin(with idToken: String) {
         let credential = firebaseHelper?.getCredentialFromApple(with: idToken, nonce: nonce!)
         firebaseHelper?.loginUser(credential: credential!) { (result, error) in
-            self.loginVM.signedIn(error: error, result: result)
+//            self.loginVM.signedIn(error: error, result: result)
         }
     }
 

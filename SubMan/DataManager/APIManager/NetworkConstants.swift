@@ -12,4 +12,21 @@ struct NetworkingConstants {
 
     static let networkErrorMessage = "Please check your internet connection and try again."
 
+    static let signIn = "/api/user"
+}
+
+
+struct UserParam: Codable {
+    var uid: String
+    var messageToken: String
+    
+    enum CodingKeys: String, CodingKey {
+        case uid
+        case messageToken = "message_token"
+    }
+}
+
+struct UserResponse: Codable {
+    var status: Int
+    var user: UserParam
 }

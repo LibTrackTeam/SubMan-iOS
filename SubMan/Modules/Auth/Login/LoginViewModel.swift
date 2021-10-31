@@ -8,78 +8,42 @@
 import Foundation
 import Firebase
 import GoogleSignIn
+import Combine
 
 class LoginViewModel {
-
-    var firebaseHelper: FirebaseHelperProtocol?
+    @Published var token: String?
+    @Published var errorMessage: String?
+    var firebaseHelper: FirebaseHelperProtocol
     var cryptHelper = CryptHelper()
     var nonce: String?
     var view: LoginViewController?
-
-    func firebaseGoogleLogin(with googleUser: GIDGoogleUser) {
-        let credential = firebaseHelper?.getCredentialFromGoogle(with: googleUser)
-        firebaseHelper?.loginUser(credential: credential!) { (result, error) in
-            self.signedIn(error: error, result: result)
+    var repo: AuthRepositoryProtocol
+    
+    init(authRepo: AuthRepositoryProtocol = AuthRepository(), helper: FirebaseHelperProtocol = FirebaseHelper()){
+        self.repo = authRepo
+        self.firebaseHelper = helper
+    }
+    
+    func signInAndGetToken(googleUser: GIDGoogleUser){
+        repo.firebaseGoogleSignIn(with: googleUser) { toek, err in
+            if let error = err {
+                self.errorMessage = error
+            } else {
+                self.token = toek
+            }
         }
     }
 
     func firebaseAppleLogin(with idToken: String) {
-        let credential = firebaseHelper?.getCredentialFromApple(with: idToken, nonce: nonce!)
-        firebaseHelper?.loginUser(credential: credential!) { (result, error) in
-            self.signedIn(error: error, result: result)
+        let credential = firebaseHelper.getCredentialFromApple(with: idToken, nonce: nonce!)
+        firebaseHelper.loginUser(credential: credential) { (result, error) in
+//            self.signedIn(error: error, result: result)
         }
     }
-
-    func signedIn(error: Error?, result: FirebaseAuthResult?) {
-        var errorMessage: String?
-        if error != nil {
-            if let errorCode = AuthErrorCode(rawValue: error!._code) {
-                switch errorCode {
-                case.wrongPassword:
-                    errorMessage = "You entered an invalid password please try again!"
-                case .weakPassword:
-                    errorMessage = "You entered a weak password. Please choose another!"
-                case .emailAlreadyInUse:
-                    errorMessage = "An account with this email already exists. Please log in!"
-                case .accountExistsWithDifferentCredential:
-                    errorMessage = "This account exists with different credentials"
-                default:
-                    errorMessage = "Unexpected error \(errorCode.rawValue) please try again!"
-                }
-            }
-        }
-        if let message = errorMessage {
-//  display alert message here
-            return
-        }
-        // get verified token
-        getVerifyIDToken()
-    }
-
+    
     func get256Sha() -> String {
         self.nonce = cryptHelper.randomNonceString()
         return cryptHelper.sha256(self.nonce!)
-    }
-
-    func signIn() {
-
-    }
-
-    func getVerifyIDToken() {
-        let currentUser = Auth.auth().currentUser
-        currentUser?.getIDTokenForcingRefresh(true) { idToken, error in
-            if let error = error {
-                // Handle error
-                print("error: \(error.localizedDescription)")
-                return
-            }
-            print("id token: \(String(describing: idToken))")
-            let def: UserDefaults = UserDefaults.standard
-            def.set(idToken, forKey: "idToken")
-            // Send token to your backend via HTTPS
-            // ...
-            self.signIn()
-        }
     }
 
 }

@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class DefaultsManager {
+    static let shared = DefaultsManager()
+}

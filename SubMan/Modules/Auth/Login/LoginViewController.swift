@@ -80,7 +80,7 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
         print("tapped")
 //        appleButtonTapped()
         //check subscriptions ui
-        let vc: SubscriptionsViewController = UIStoryboard(name: "Subscriptions", bundle: nil).instantiateViewController(withIdentifier: "SubscriptionsViewController") as! SubscriptionsViewController
+    let vc: SubscriptionsViewController = UIStoryboard(name: "Subscriptions", bundle: nil).instantiateViewController(withIdentifier: "SubscriptionsViewController") as! SubscriptionsViewController
         self.present(vc, animated: true, completion: nil)
     }
 

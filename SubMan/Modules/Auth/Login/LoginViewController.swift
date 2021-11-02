@@ -14,7 +14,7 @@ import Combine
 
 class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
 
-    var firebaseHelper: FirebaseHelperProtocol? = FirebaseHelper()
+    var firebaseHelper: FirebaseHelperProtocol = FirebaseHelper()
     var cryptHelper = CryptHelper()
     var nonce: String?
     var loginVM: LoginViewModel = LoginViewModel()
@@ -65,15 +65,15 @@ class LoginViewController: UIViewController, GIDSignInDelegate, AuthUIDelegate {
     }
 
     func firebaseGoogleLogin(with googleUser: GIDGoogleUser) {
-        let credential = firebaseHelper?.getCredentialFromGoogle(with: googleUser)
-        firebaseHelper?.loginUser(credential: credential!) { (result, error) in
+        let credential = firebaseHelper.getCredentialFromGoogle(with: googleUser)
+        firebaseHelper.loginUser(credential: credential) { (result, error) in
 //            self.loginVM.signedIn(error: error, result: result)
         }
     }
 
     func firebaseAppleLogin(with idToken: String) {
-        let credential = firebaseHelper?.getCredentialFromApple(with: idToken, nonce: nonce!)
-        firebaseHelper?.loginUser(credential: credential!) { (result, error) in
+        let credential = firebaseHelper.getCredentialFromApple(with: idToken, nonce: nonce!)
+        firebaseHelper.loginUser(credential: credential) { (result, error) in
 //            self.loginVM.signedIn(error: error, result: result)
         }
     }

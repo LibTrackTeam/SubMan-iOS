@@ -19,12 +19,12 @@ class LoginViewModel {
     var view: LoginViewController?
     var repo: AuthRepositoryProtocol
     
-    init(authRepo: AuthRepositoryProtocol = AuthRepository(), helper: FirebaseHelperProtocol = FirebaseHelper()){
+    init(authRepo: AuthRepositoryProtocol = AuthRepository(), helper: FirebaseHelperProtocol = FirebaseHelper()) {
         self.repo = authRepo
         self.firebaseHelper = helper
     }
     
-    func signInAndGetToken(googleUser: GIDGoogleUser){
+    func signInAndGetToken(googleUser: GIDGoogleUser) {
         repo.firebaseGoogleSignIn(with: googleUser) { toek, err in
             if let error = err {
                 self.errorMessage = error

@@ -21,6 +21,12 @@
 		7DF23299272E6EC100CC1410 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF23298272E6EC100CC1410 /* AuthRepository.swift */; };
 		7DF2329B272E746E00CC1410 /* AuthAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF2329A272E746E00CC1410 /* AuthAPIRouter.swift */; };
 		7DF2329D272F10C900CC1410 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DF2329C272F10C900CC1410 /* GoogleService-Info.plist */; };
+		7DF232A4272F36CF00CC1410 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF232A3272F36CF00CC1410 /* LoginViewModelTests.swift */; };
+		7DF232A6272F375E00CC1410 /* AuthRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF232A5272F375E00CC1410 /* AuthRepositoryTests.swift */; };
+		7DF232A7272F377500CC1410 /* CategoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */; };
+		7DF232A8272F377800CC1410 /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */; };
+		7DF232AA272F378F00CC1410 /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF232A9272F378F00CC1410 /* AuthServiceTests.swift */; };
+		7DF232AF2731F8BE00CC1410 /* FirebaseHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF232AE2731F8BE00CC1410 /* FirebaseHelperMock.swift */; };
 		D5610E5A2725FC92000B3685 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E592725FC92000B3685 /* Login.storyboard */; };
 		D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5610E5B27260285000B3685 /* SubscriptionsViewController.swift */; };
 		D5610E6027261488000B3685 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5610E5F27261488000B3685 /* Settings.storyboard */; };
@@ -91,7 +97,6 @@
 		7D9FE2272725A4F700883F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
 		7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesService.swift; sourceTree = "<group>"; };
-		7D9FE2302725FD0400883F4F /* DefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsManager.swift; sourceTree = "<group>"; };
 		7D9FE23327260B7100883F4F /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		7D9FE23627260B8300883F4F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7D9FE23827260B8D00883F4F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -100,6 +105,10 @@
 		7DF23298272E6EC100CC1410 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		7DF2329A272E746E00CC1410 /* AuthAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIRouter.swift; sourceTree = "<group>"; };
 		7DF2329C272F10C900CC1410 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DF232A3272F36CF00CC1410 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		7DF232A5272F375E00CC1410 /* AuthRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryTests.swift; sourceTree = "<group>"; };
+		7DF232A9272F378F00CC1410 /* AuthServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceTests.swift; sourceTree = "<group>"; };
+		7DF232AE2731F8BE00CC1410 /* FirebaseHelperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelperMock.swift; sourceTree = "<group>"; };
 		BADA6CD107D138633E74D34C /* Pods-SubMan-SubManUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.debug.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C9EEEC003E17C9DBC4EFBE64 /* Pods-SubMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan.release.xcconfig"; path = "Target Support Files/Pods-SubMan/Pods-SubMan.release.xcconfig"; sourceTree = "<group>"; };
 		D1FBF51B5596BECE3036F0EF /* Pods-SubMan-SubManUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubMan-SubManUITests.release.xcconfig"; path = "Target Support Files/Pods-SubMan-SubManUITests/Pods-SubMan-SubManUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,35 +218,74 @@
 		7D9FE2292725FCBE00883F4F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7DF23295272E6B6F00CC1410 /* Auth */,
-				7D9FE22B2725FCCD00883F4F /* Categories */,
-				7D9FE22A2725FCC600883F4F /* Subscriptions */,
+				7DF232AC272FCDB000CC1410 /* Realm */,
+				7DF232AB272FCDA300CC1410 /* API */,
+				7DF23296272E6B8500CC1410 /* AuthService.swift */,
+				7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */,
+				7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		7D9FE22A2725FCC600883F4F /* Subscriptions */ = {
+		7DF2329E272F367A00CC1410 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				7D9FE22C2725FCDD00883F4F /* SubscriptionService.swift */,
+				7DF232A9272F378F00CC1410 /* AuthServiceTests.swift */,
 			);
-			path = Subscriptions;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		7D9FE22B2725FCCD00883F4F /* Categories */ = {
+		7DF2329F272F368000CC1410 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				7D9FE22E2725FCEA00883F4F /* CategoriesService.swift */,
+				7DF232A5272F375E00CC1410 /* AuthRepositoryTests.swift */,
 			);
-			path = Categories;
+			path = Repository;
 			sourceTree = "<group>";
 		};
-		7DF23295272E6B6F00CC1410 /* Auth */ = {
+		7DF232A0272F36A700CC1410 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				7DF23296272E6B8500CC1410 /* AuthService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7DF232A1272F36B200CC1410 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7DF232A2272F36B900CC1410 /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7DF232A2272F36B900CC1410 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7DF232A3272F36CF00CC1410 /* LoginViewModelTests.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		7DF232AB272FCDA300CC1410 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7DF232AC272FCDB000CC1410 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		7DF232AD272FE83700CC1410 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7DF232AE2731F8BE00CC1410 /* FirebaseHelperMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		B7AC3384E3B6A8CDD05C0975 /* Pods */ = {
@@ -320,6 +368,11 @@
 		D5A2712B272442D900F00251 /* SubManTests */ = {
 			isa = PBXGroup;
 			children = (
+				7DF232AD272FE83700CC1410 /* Mocks */,
+				7DF232A1272F36B200CC1410 /* Modules */,
+				7DF232A0272F36A700CC1410 /* Helpers */,
+				7DF2329F272F368000CC1410 /* Repository */,
+				7DF2329E272F367A00CC1410 /* Services */,
 				D5A2712C272442D900F00251 /* SubManTests.swift */,
 				D5A2712E272442D900F00251 /* Info.plist */,
 			);
@@ -368,7 +421,6 @@
 				7D9FE21627259F6E00883F4F /* Endpoints */,
 				D5A2715227244A9600F00251 /* APIManager */,
 				D5A2714C2724479F00F00251 /* ApiResponse.swift */,
-				7D9FE2302725FD0400883F4F /* DefaultsManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -751,10 +803,12 @@
 				D5A27151272449DF00F00251 /* NetworkConstants.swift in Sources */,
 				7D9FE21A27259F9200883F4F /* CategoriesAPIRouter.swift in Sources */,
 				D5A2716027246BC900F00251 /* UIViewController.swift in Sources */,
+				7DF232A8272F377800CC1410 /* SubscriptionService.swift in Sources */,
 				D5A2716227246C2400F00251 /* UIView.swift in Sources */,
 				D5610E5C27260285000B3685 /* SubscriptionsViewController.swift in Sources */,
 				7DF23297272E6B8500CC1410 /* AuthService.swift in Sources */,
 				D5A2714D2724479F00F00251 /* ApiResponse.swift in Sources */,
+				7DF232A7272F377500CC1410 /* CategoriesService.swift in Sources */,
 				D5A2714F272449C300F00251 /* NetworkManager.swift in Sources */,
 				D5A27116272442D500F00251 /* AppDelegate.swift in Sources */,
 				D5D28B18272AC82E00ACCE40 /* AddSubsciptionCell.swift in Sources */,
@@ -780,7 +834,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF232A6272F375E00CC1410 /* AuthRepositoryTests.swift in Sources */,
+				7DF232A4272F36CF00CC1410 /* LoginViewModelTests.swift in Sources */,
+				7DF232AF2731F8BE00CC1410 /* FirebaseHelperMock.swift in Sources */,
 				D5A2712D272442D900F00251 /* SubManTests.swift in Sources */,
+				7DF232AA272F378F00CC1410 /* AuthServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
